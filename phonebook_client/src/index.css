@@ -1,0 +1,22 @@
+.person {
+    color: rgb(9, 96, 80);
+} 
+.deleteButton {
+    background-color: rgb(9, 96, 80);
+    color: white;
+    border: none;
+    margin: 0 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: rgb(91, 21, 21);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    row-gap: 10px;
+}
