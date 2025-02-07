@@ -7,8 +7,8 @@ const Persons = ({ persons = [], filter = "", setPersons }) => {
   const handleDeletePerson = (id, name) => {
     const confirmDelete = window.confirm(`delete ${name} ?`);
     if (!confirmDelete) return;
-    personService.deletePerson(id).then((response) => {
-      setPersons(response);
+    personService.deletePerson(id).then(() => {
+      setPersons(persons => persons.filter(person => person.id !== id));
     });
   };
 
